@@ -2,19 +2,21 @@
 
 The lowdown:
 
-	var Treenode = require('paths2tree')({sep: '.'});
-	var archy = require('archy');
+```js
+var Treenode = require('paths2tree')({sep: '.'});
+var archy = require('archy');
 
-	var root = new Treenode('.');
-	root.push_path('com');
-	root.push_path('com.google');
-	root.push_path('com.google.www');
-	root.push_path('com.google.api');
-	root.push_path('com.gmail');
-	root.push_path('com.gmail.www');
-	root.push_path('com.gmail.smtp');
+var root = new Treenode('.');
+root.push_path('com');
+root.push_path('com.google');
+root.push_path('com.google.www');
+root.push_path('com.google.api');
+root.push_path('com.gmail');
+root.push_path('com.gmail.www');
+root.push_path('com.gmail.smtp');
 
-	console.log(archy(root));
+console.log(archy(root));
+```
 
 Output:
 
@@ -30,8 +32,10 @@ Output:
 Works for any kind of path separator. If you leave out the option, it
 defaults to `require('path').sep`.
 
-	// use OS default path separator
-	var Treenode = require('paths2tree')();
+```js
+// use OS default path separator
+var Treenode = require('paths2tree')();
+```
 
 Simple.
 
