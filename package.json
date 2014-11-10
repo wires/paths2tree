@@ -1,0 +1,10 @@
+{
+  "author": "Jelle 'wires' Herold <jelle@defekt.nl> (http://defekt.nl/)",
+  "name": "paths2tree",
+  "version": "0.0.1",
+  "description": "Convert list of paths into a tree",
+  "main": "tree.js",
+  "license": "MIT",
+  "homepage": "https://github.com/wires/paths2tree",
+  "repository": "git://github.com/wires/paths2tree.git"
+}
